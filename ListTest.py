@@ -50,3 +50,15 @@ the_list.append(input("Please enter a name: "))
 
 print("Final: ", end="")
 print(the_list)
+#print()
+#print()
+#print()
+#print()
+#print()
+#print()
+#LIST: ADDON AND VIEW SHARED ITEMS ON LIST:
+my_set = {"burger", "pizza", "burrito", "taco", "hot dog"}
+friend_set = {"burger", "fried chicken", "pizza", "wrap", "ramen"}
+my_set.add("nachos")
+print("Shared: ", my_set.intersection(friend_set))
+#print()
