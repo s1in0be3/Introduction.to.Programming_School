@@ -1,41 +1,9 @@
-#! python3
-a=("Mvh SB")
-c=("The end of the story")
-d=("bye")
-e=("see you!")
-f=("You are a jerk!")
-g=("You are nice!")
-h=("Bob")
-b=a
-
-print("Hey World")
-print("How are you?")
-print("I'm fine!")
-print(a)
-print()
-print(c)
-print(e)
-print(d)
-print(b)
-# print(f) This line is ignored by the interpreter.
-print(g)
-print()
-print(f,c, "haha, just kidding!")
-print()
-print(g,d, "good night", sep='--')
-print()
-print(a, end='')
-print(e)
-print()
-print(a,end=". This is one type of ending.\n")
-print(e,end=" This is another type of ending.\n")
-print()
-print()
-print("Enter a name:")
-a = input()
-print("Hello,",a)
-print()
-a = input("Enter a value: ")
-print("Good Morning,", a)
-print()
-print()
+Numbers
+Integer: used to store whole numbers, e.g. 50.
+Float: used to store numbers with decimals, e.g. 50.12.
+Boolean: used to store True or False values.
+Complex: the definition for complex numbers is outside the scope of this lesson.
+  
+Strings and characters:
+A character is a single letter, digit or punctuation symbol.
+A string is basically a sequence of characters.
