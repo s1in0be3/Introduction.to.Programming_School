@@ -1,0 +1,34 @@
+#Create a script called MyPhonebook. The script is required to do the following:
+#print()
+# Define a dictionary consisting of 5 business names and their associated phone numbers.
+# The business name should be used as the key.
+ phonebook = {"Nikita AS": "222 33 222",
+              "På Håret AS": "444 99 444",
+              "Adam & Eva AS": "777 22 777",
+              "Short Cut AS": "111 77 111",
+              "Cutters AS": "333 88 333"}
+
+ print(phonebook)
+
+# Request the name and number of another business from the user and add it to the dictionary.
+# Ask the user to type in the name of a business.
+# # If the business exists, display it’s phone number; otherwise display the message
+# # “The business is not in the phonebook.”.
+#
+ company_name = input("Enter a company name to be added to the list: ")
+ company_number = input("Enter the company's number: ")
+ phonebook[company_name] = company_number
+#
+#
+ search = input("Search for a  already existing company name: ")
+
+ if search in phonebook.keys():
+     print(phonebook[search])
+ else:
+     print("The company is not in the phonebook.")
+
+ # Display the entire dictionary (names and phone numbers).
+ print(phonebook)
+# # Display only the business names (no phone numbers).
+ print(phonebook.keys())
+print()
