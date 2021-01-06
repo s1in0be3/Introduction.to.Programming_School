@@ -1,0 +1,16 @@
+# ! python3
+# Make a shopping list program where the user can write in what to add to the list.
+# Print out the list at the end.
+shopping_list = list()
+print("Hi and welcome to our grocery store!")
+print()
+def calculate_price():
+    shopping_list.append(input("Please add an item to your shopping list: "))
+    amount = int(input("how many do you wish to purchase: "))
+    price = 10
+    total = amount * int(price)
+    print("Thank you for shopping with us!\nYou added", shopping_list, "to your shopping list. The total for", amount, shopping_list, "(s)", "is:", total,"KR",sep=' ')
+print()
+calculate_price()
+print("In your shopping cart:", shopping_list)
+print()
