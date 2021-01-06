@@ -1,0 +1,14 @@
+# Make a list of all the month in a year.
+# print out the first letter of each month.
+# sort the month in alphabetic order.
+# print()
+print("This is all the months in 2021.")
+mylist = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+print (mylist)
+print("In alphabetical order:")
+alphabetical = sorted(mylist)
+print(alphabetical)
+
+print("Print out the first letter of each month:")
+# print()
