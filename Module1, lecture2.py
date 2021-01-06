@@ -65,4 +65,3 @@ User input is gathered using the input () statement. The input statement returns
 ||| Output:
 ||| Student percentage: 0.68
           
-hihi
