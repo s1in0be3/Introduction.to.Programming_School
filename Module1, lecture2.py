@@ -62,3 +62,7 @@ User input is gathered using the input () statement. The input statement returns
 ||| student_mark = 34
 ||| test_max = 50
 ||| print("Student percentage:",student_mark / test_max)
+||| Output:
+||| Student percentage: 0.68
+          
+hihi
