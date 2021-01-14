@@ -1,0 +1,26 @@
+#Create a script name slicer.py. In this script, prompt the user to enter a string of text, an index inside the string where a substring should
+#start and an index inside the string where the substring should end. Make use of what you know of error handling to ensure
+#that if a start index is outside of the bounds of the string it is set to the first element / character in the string and if an end index is
+#set outside of the bounds of the string it is set to the last element / character in the string. Display the substring to the user.
+#
+#
+to_slice = input("Enter a string to slice:  ")
+
+try:
+    start_index = int(input("Enter a starting index:  "))
+except:
+    start_index = 0
+
+try:
+    end_index = int(input("Enter an ending index:  "))
+except:
+    end_index = len(to_slice)
+
+
+if start_index < 0:
+    start_index = 0
+
+if end_index >= len(to_slice):
+    end_index = len(to_slice)
+
+print(to_slice[start_index:end_index])
