@@ -1,0 +1,48 @@
+#Create a script called Output4Values.py. Ask the user to input 4 different string values.
+#Your program needs to store the values in 4 different variables. Output these values to screen using a single print statement. The print statement needs to do the following:
+#Separate the values using a semi-colon.
+#Automatically add the statement ". Output complete!" to the end of the print() output.
+#Not move the cursor to the following line after performing the output.
+#
+#
+#! python3
+a=("Mvh SB")
+c=("The end of the story")
+d=("bye")
+e=("see you!")
+f=("You are a jerk!")
+g=("You are nice!")
+h=("Bob")
+b=a
+
+print("Hey World")
+print("How are you?")
+print("I'm fine!")
+print(a)
+print()
+print(c)
+print(e)
+print(d)
+print(b)
+# print(f) This line is ignored by the interpreter.
+print(g)
+print()
+print(f,c, "haha, just kidding!")
+print()
+print(g,d, "good night", sep='--')
+print()
+print(a, end='')
+print(e)
+print()
+print(a,end=". This is one type of ending.\n")
+print(e,end=" This is another type of ending.\n")
+print()
+print()
+print("Enter a name:")
+a = input()
+print("Hello,",a)
+print("Enter a new name: ")
+a = input()
+print("Good Morning,", a)
+print()
+print()
