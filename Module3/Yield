@@ -1,0 +1,36 @@
+#Generators:
+#Yield statement
+#
+#Create a script called yield.py.
+#Create and define a function and name it yield.
+#Create a range for your function with specifying your initial value and an increment. 
+#Underneath your function, create a variable and set your variable to the initial value which you have specified in your range. 
+#Underneath your increment variable, create a while statement and make it loop infinitely (HINT: the True keyword 😊)
+#Using the yield keyword, yield your initial value variable and set an increment
+#
+#Now create separate variable calling your created function and add arguments to your range (so define your variables) 
+#
+#Print your first variable calling your function. 
+#Once this is done, create a for loop for your first function. 
+#Set an iteration and write an iteration where the iteration is less than your maximum number in your range. 
+#Create a break
+#Create a false statement to print your iteration 
+#
+Do the above for your second function
+
+
+def __yield(initial_value, increment):
+    i = initial_value
+    while True:
+        yield i
+        i += increment
+
+one = __yield(0, 1)
+two = __yield(0, 5)
+
+print(next(one))
+print(next(one))
+print(next(two))
+print(next(one))
+print(next(one))
+print(next(two))
