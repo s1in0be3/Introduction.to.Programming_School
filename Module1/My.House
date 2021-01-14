@@ -1,4 +1,13 @@
 #! python3
+#Create a script called MyHouse.py. This script should display the following pattern (or  similar) to screen:
+#         X
+#        XXX
+#       XXXXX
+#       |   |
+#       |   |
+#       -----
+#
+#
 #PRAX 1
 a=("X")
 b=("|")
