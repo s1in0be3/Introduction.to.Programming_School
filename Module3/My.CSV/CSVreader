@@ -1,8 +1,8 @@
-#Open up a spreadsheet editor and create a csv file called mycsv.csv.
+#Open up a spreadsheet editor and create a csv file called mycsv.csv (My is called "siricsv.csv").
 #Populate this file with data as you choose. Create a script called csvreader.py.
 #Load the data from the mycsv.cvs file and display it to the user.
 
-my_file = open("mycsv.csv", "r")
+my_file = open("siricsv.csv", "r")
 
 # Display all the contents of the file
 print(my_file.read())
