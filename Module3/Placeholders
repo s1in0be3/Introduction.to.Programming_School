@@ -1,0 +1,104 @@
+# # Create a script called placeholders
+# # Declare 2 values:
+# # 1st value is 50
+# # 2nd value is 70
+# # Write an ‘if statement’ that is the first value is bigger than the second then print a statement saying the
+# # first value is bigger.
+# # Now add a false statement (else) to print that the first value is not bigger than the second value.
+# # the false statement should execute
+sun = 50
+moon = 70
+
+if sun > moon:
+    print("Fist value sun is bigger than second value, moon.")
+else:
+    print("Second value moon is NOT bigger than first value, sun.")
+
+print()
+print("This text shows up after the 'if statment' is done.")
+# # #
+# # # Now, using the same values that you have declared above, define a function and name it placeholder and
+# # # add a return statement. Now the same if statement as above.
+# # # Write a false (else) statement but instead of using the print() use the placeholder().
+# # # Print a false message
+# # # the false statement should execute and your statement should have the same output as the first activity
+# # #
+def placeholder():
+    return
+
+if sun > moon:
+    print("Fist value sun is bigger than second value, moon.")
+else:
+    placeholder()
+
+print()
+print("This text shows up after the 'if statment' is done.")
+# # ACTIVITY 2: Generators, Yield statement.
+# # Create a script called yield
+# # Create and define a function and name it yield.
+# # Create a range for your function with specifying your initial value and an increment.
+# # Underneath your function, create a variable and set your variable to the initial value
+# # which you have specified in your range.
+# # Underneath your increment variable, create a while statement and make it loop infinitely
+# # (HINT: the True keyword.)
+# # Using the yield keyword, yield your initial value variable and set an increment
+# #
+def simple_yield():
+    increment = 0
+    while True:
+        yield increment
+        increment += 2
+
+def variable(initial_value, increment):
+    i = initial_value
+    while True:
+        yield i
+        i += increment
+
+print()
+first_increment = simple_yield()
+second_increment = simple_yield()
+print()
+print("This is the first Incrementer Value in the first script.")
+print(next(first_increment))
+print(next(first_increment))
+print(next(first_increment))
+print()
+print("This is the second Incrementer Value in the first script.")
+print(next(second_increment))
+print(next(second_increment))
+print(next(second_increment))
+print()
+# # Now create separate variable calling your created function and add arguments to your range
+# # (so define your variables).
+# # Print your first variable calling your function.
+# # Once this is done, create a for loop for your first function.
+# # Set an iteration and write an iteration where the iteration is less than your maximum number in your range.
+# # Create a break
+# # Create a false statement to print your iteration
+# # Do the above for your second function
+def my_range(initial_value, increment):
+    i = initial_value
+    while True:
+        yield i
+        i += increment
+
+increment_one = my_range(0, 1)
+increment_two = my_range(0, 5)
+
+print("First generator: ", end=' ')
+for i in increment_one:
+    if i > 10:
+        break
+    else:
+        print(i, end=', ')
+
+print()
+print("Second generator: ", end=' ')
+for i in increment_two:
+    if i > 30:
+        break
+    else:
+        print(i, end=', ')
+print(next(increment_two))
+# print ()
