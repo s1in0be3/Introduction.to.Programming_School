@@ -1,3 +1,15 @@
+#Create a script named editor.py. In this script, prompt the user to enter a string of text.
+The following needs to happen until the user decides to exit the program, by pressing "e":
+#Display the current version of the input string to the user.  
+#Ask the user to select an option to be applied to the string: 
+#1: Uppercase 
+#2: Lowercase 
+#3: Titlecase 
+#4: Remove front and back whitespaces 
+#e: Exit program 
+#Update the string using the requested method or exit the program.
+#
+#
 the_string = input('Please enter your string: ')  # Adding a string used
 print('For menu, press \'m\'')
 
