@@ -1,3 +1,4 @@
+# ! python3
 #Create a script called PrintPerfect. Create a script that requests a maximum
 # integer from the user. The script should then calculate every perfect number from
 # 1 to the maximum value entered by the user. A number is perfect if it is equal to
