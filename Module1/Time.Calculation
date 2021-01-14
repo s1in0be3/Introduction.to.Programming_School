@@ -1,0 +1,26 @@
+#! python3
+#script called Time_Calculation
+#print()
+#A manager has requested that you write a script that allows him to enter a value representing the number of
+# minutes one of his employees has worked in a month. He wants the script to use the number of minutes to
+# calculate the number of days worked in the month, the number of hours left over (not adding up to a full
+# working day) and the number of minutes left over (not adding up to a full hour). For the sake of this
+# calculation, a working day consists of 8 hours. Once calculated, display the resulting calculation in the
+# following format: working days:hours:minutes.
+
+#Value = Minutes
+#Days worked in a month
+#Hours left over (not adding up to a full working day)
+#Minutes left over (not adding up to a full hour)
+#One working day is 8 hours
+#Answers in following format: working days:hours:minutes
+#print()
+
+minutes = int(input("Please enter the number of (whole) minutes worked this month: "))
+hours = int(minutes / 60)
+minutes = int(minutes % 60)
+days = int(hours / 8)
+hours = int(hours % 8)
+print("{0}:{1}:{2}".format(days, hours, minutes))
+print()
+#print()
