@@ -1,0 +1,21 @@
+#! python3
+#Create a script called SalesCalculator. The script should request 10 sales values from the user using a loop.
+# If the value entered by the user is less than 5000 the rest of the current loop iteration should
+# not be performed. If the value is higher than 5000 and less than 10001 the current sales total and sales
+# average of the user should be printed to screen. If the value is higher than 10000, the loop should stop
+# entirely and a message should be displayed that a possible data entry error has occurred.
+#print()
+sales_list = list()
+
+while len(sales_list) < 10:
+    sales_value = float(input("Enter a sales value: "))
+    sales_list.append(sales_value)
+
+    if sales_value < 5000:
+        continue
+    elif 5000 < sales_value < 10001:
+        print("Total:  ", sum(sales_list))
+        print("Average:  ", sum(sales_list)/float(len(sales_list)))
+    elif sales_value > 10000:
+        print("A possible date entry error has occurred.")
+        break
