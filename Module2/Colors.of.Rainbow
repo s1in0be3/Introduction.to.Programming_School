@@ -1,0 +1,8 @@
+# Make a tuple with the colors of the rainbow and print it out.
+# print()
+# Red, Orange, Yellow, Green, Blue, Indigo, Violet
+rainbow_colors = ("Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet")
+print("Colors of the rainbow:")
+print(rainbow_colors)
+print()
+# print()
