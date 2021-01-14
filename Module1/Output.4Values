@@ -1,3 +1,4 @@
+#! python3
 #Create a script called Output4Values.py. Ask the user to input 4 different string values.
 #Your program needs to store the values in 4 different variables. Output these values to screen using a single print statement. The print statement needs to do the following:
 #Separate the values using a semi-colon.
