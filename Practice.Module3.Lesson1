@@ -58,3 +58,87 @@ print("slice at index 5 up to the end of the string: ",test_string[5:])
 print("slice at index 5 up to 3 characters from the end: ",test_string[5:-3])
 print()
 ________________________________________________________________
+#Membership
+#
+#Search through a string for a specific value (e.g. similar to find (ctrl + f))
+
+test_string = "This is my string"
+
+# print("Membership inclusive:")
+# print("This" in test_string)
+# print("John" in test_string)
+# # print()
+print("Membership exclusive:")
+print("This" not in test_string)
+print("John" not in test_string)
+print()
+________________________________________________________________
+#Raw Strings
+#
+print("This is a \t string") # Normal behaviour
+print(r"This is a \t string") # Interpreted as a raw string
+print()
+________________________________________________________________
+#Docstrings
+#
+def my_test_function():
+    '''This is a function to demonstrate the use of a docstring''' #<---------- remember to use 3 quotation marks
+    return
+
+print(my_test_function.__doc__) #<------remember to use 2 underscores before and after calling your doc method
+print()
+________________________________________________________________
+#formatting strings
+#
+#formatting is applied using the format() method and curly brackets as placeholders.
+print()
+________________________________________________________________
+#unindexed string
+#
+# Define a string and create placeholders using {}.
+my_string = "{} sold {} items."
+# Call, the string's format method.
+# Pass as many arguments to the format method as there
+# are sets of {} in the string.  In this case 2.
+print(my_string.format("Olaf",20))
+
+# The same can be done on a string literal,
+# without using a pre-defined variable.
+print("This example requires {} argument(s).".format(1))
+print()
+________________________________________________________________
+# #indexed string
+#
+my_string = "{0} sold {1} items. {2} sold {3} items. {2} was the better salesperson than {0}"
+
+first_person = "Olaf"
+second_person = "Nina"
+first_sales = 10
+second_sales = 20
+
+# The interpreter looks at the list of arguments and assigns
+# them according to their index in the list of arguments as
+# the placeholder in the string.
+# The indexes for the arguments are as follows:
+# 0: first_person
+# 1: first_sales
+# 2: second_person - will be used twice according to the string
+# 3: second_sales
+print(my_string.format(first_person, first_sales, second_person, second_sales))
+print()
+________________________________________________________________
+# Placeholders
+#
+#Python also allows individual placeholders to be formatted.
+# Formatting determines how they are displayed.
+
+print("f:  {0:f}".format(50.4756))
+print(".2f:  {0:.2f}".format(50.4756))
+print(".6f:  {0:.6f}".format(50.4756))
+print("e:  {0:e}".format(50.4756))
+print("b:  {0:b}".format(231))
+print("o:  {0:o}".format(231))
+print("x:  {0:x}".format(231))
+print("X:  {0:X}".format(231))
+print()
+________________________________________________________________
