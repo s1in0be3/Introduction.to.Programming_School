@@ -1,0 +1,18 @@
+#Create a script called PostalCodes. Create a data structure able to store 10 postal
+# codes with their associated residential areas. Prompt the user to enter a postal code.
+# If the postal code exists, output the residential area linked to the postal code.
+#print()
+postal_codes = {1444: "oslo",
+                2201: "bergen",
+                9533: "Finnmark"}
+#I didn't care about writing 10 of them, when I understand the code.
+
+print(postal_codes)
+user_input = int(input("Enter a postal code: "))
+
+if user_input in postal_codes.keys():
+    print(postal_codes[user_input])
+else:
+    print("the postal code does not exist")
+#print()
+#
