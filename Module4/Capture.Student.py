@@ -1,6 +1,6 @@
 import cgi
 
-data = cgi.FieldStorage() #there is a errormessage here: "cannot find refrence 'frieldstorage' in 'cgi.pyi' :3 
+data = cgi.FieldStorage()
 name = data.getvalue("Name")
 surname = data.getvalue("Surname")
 description = data.getvalue("Description")
