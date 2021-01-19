@@ -1,0 +1,20 @@
+import cgi
+
+data = cgi.FieldStorage()
+name = data.getvalue("name")
+surname = data.getvalue("surname")
+description = data.getvalue("description")
+
+print("Content-Type: text/html")
+print()
+print("<!DOCTYPE HTML>")
+print("<html>")
+print("<head>")
+print("<title>Student details</title>")
+print("</head>")
+print("<body>")
+print("<h1>{} {}</h1>".format(name, surname))
+print("<p>{}</p>".format(description))
+print("<a href=\"Capture.Student.withtext.area.html\">Back</a>")
+print("</body>")
+print("</html>")
