@@ -1,3 +1,4 @@
+#Filename is named "root.py" in project.
 import os
 
 root_path = "C:\\Users\'username'\PycharmProjects"
