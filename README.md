@@ -1,3 +1,2 @@
-# Python_PrintCommands-PRG-Module1
-Very Basic commands
+# Python_PrintCommands-PRG
 School learing python
