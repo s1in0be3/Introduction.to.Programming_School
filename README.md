@@ -1,2 +1,2 @@
-# Python_PrintCommands-PRG
+# Python_Commands-PRG
 School learing python
